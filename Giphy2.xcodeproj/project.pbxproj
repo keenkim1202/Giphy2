@@ -15,6 +15,7 @@
 		3E070FA825AAE654009B53D1 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E070FA725AAE653009B53D1 /* FeedTableViewCell.swift */; };
 		3E070FAC25AAE864009B53D1 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E070FAB25AAE864009B53D1 /* UserType.swift */; };
 		3E070FB225AAEBAF009B53D1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3E070FB125AAEBAF009B53D1 /* Kingfisher */; };
+		B80AB83225BBEC9900C0459C /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AB83125BBEC9900C0459C /* UserRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3E070F9E25AAE06C009B53D1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = SOURCE_ROOT; };
 		3E070FA725AAE653009B53D1 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		3E070FAB25AAE864009B53D1 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
+		B80AB83125BBEC9900C0459C /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		3E070F9425AACFFC009B53D1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B80AB83025BBEC8300C0459C /* Service */,
 				3E070FAA25AAE853009B53D1 /* models */,
 				3E070F9D25AAE04C009B53D1 /* ViewControllers */,
 				3E070F7E25AACD86009B53D1 /* AppDelegate.swift */,
@@ -109,6 +112,14 @@
 				3E070FAB25AAE864009B53D1 /* UserType.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		B80AB83025BBEC8300C0459C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B80AB83125BBEC9900C0459C /* UserRepository.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +202,7 @@
 				3E070FAC25AAE864009B53D1 /* UserType.swift in Sources */,
 				3E070F9F25AAE06C009B53D1 /* FeedViewController.swift in Sources */,
 				3E070FA825AAE654009B53D1 /* FeedTableViewCell.swift in Sources */,
+				B80AB83225BBEC9900C0459C /* UserRepository.swift in Sources */,
 				3E070F7F25AACD86009B53D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,7 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "/Users/kimhyejin/Projects/Giphy2/Giphy2/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "/Users/heyziin/Projects/Giphy2/Giphy2/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -351,7 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "/Users/kimhyejin/Projects/Giphy2/Giphy2/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "/Users/heyziin/Projects/Giphy2/Giphy2/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
