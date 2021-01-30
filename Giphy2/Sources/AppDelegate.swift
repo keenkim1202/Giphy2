@@ -9,11 +9,11 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+  
   var window: UIWindow?
-
+  
   private var userRepository: UserRepositoryType? = nil
-    
+  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
     let rect = UIScreen.main.bounds
@@ -26,6 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.userRepository = userRepository
     return true
   }
-
+  
 }
 

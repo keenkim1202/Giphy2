@@ -16,6 +16,7 @@
 		3E070FAC25AAE864009B53D1 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E070FAB25AAE864009B53D1 /* UserType.swift */; };
 		3E070FB225AAEBAF009B53D1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3E070FB125AAEBAF009B53D1 /* Kingfisher */; };
 		B80AB83225BBEC9900C0459C /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AB83125BBEC9900C0459C /* UserRepository.swift */; };
+		B833359725C5305400A35B32 /* FeedViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B833359625C5305400A35B32 /* FeedViewController+UITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +25,11 @@
 		3E070F8725AACD87009B53D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E070F8A25AACD87009B53D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E070F8C25AACD87009B53D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E070F9E25AAE06C009B53D1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = SOURCE_ROOT; };
+		3E070F9E25AAE06C009B53D1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Giphy2/Sources/ViewControllers/Feed/FeedViewController.swift; sourceTree = SOURCE_ROOT; };
 		3E070FA725AAE653009B53D1 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		3E070FAB25AAE864009B53D1 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 		B80AB83125BBEC9900C0459C /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		B833359625C5305400A35B32 /* FeedViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewController+UITableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,7 @@
 		3E070F9D25AAE04C009B53D1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3E070F9E25AAE06C009B53D1 /* FeedViewController.swift */,
-				3E070FA725AAE653009B53D1 /* FeedTableViewCell.swift */,
+				B833359525C5301D00A35B32 /* Feed */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -120,6 +121,16 @@
 				B80AB83125BBEC9900C0459C /* UserRepository.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		B833359525C5301D00A35B32 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				3E070F9E25AAE06C009B53D1 /* FeedViewController.swift */,
+				3E070FA725AAE653009B53D1 /* FeedTableViewCell.swift */,
+				B833359625C5305400A35B32 /* FeedViewController+UITableView.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			files = (
 				3E070FAC25AAE864009B53D1 /* UserType.swift in Sources */,
 				3E070F9F25AAE06C009B53D1 /* FeedViewController.swift in Sources */,
+				B833359725C5305400A35B32 /* FeedViewController+UITableView.swift in Sources */,
 				3E070FA825AAE654009B53D1 /* FeedTableViewCell.swift in Sources */,
 				B80AB83225BBEC9900C0459C /* UserRepository.swift in Sources */,
 				3E070F7F25AACD86009B53D1 /* AppDelegate.swift in Sources */,

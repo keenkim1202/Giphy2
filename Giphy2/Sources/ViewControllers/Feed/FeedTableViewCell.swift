@@ -28,7 +28,7 @@ class FeedTableViewCell: UITableViewCell {
     let horizontalStackView = UIStackView()
     horizontalStackView.axis = .horizontal
     horizontalStackView.spacing = 16
-
+    
     contentView.addSubview(horizontalStackView)
     horizontalStackView.snp.makeConstraints { (maker) in
       maker.edges.equalToSuperview()
