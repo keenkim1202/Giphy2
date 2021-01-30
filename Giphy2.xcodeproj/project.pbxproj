@@ -17,6 +17,8 @@
 		3E070FB225AAEBAF009B53D1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3E070FB125AAEBAF009B53D1 /* Kingfisher */; };
 		B80AB83225BBEC9900C0459C /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AB83125BBEC9900C0459C /* UserRepository.swift */; };
 		B833359725C5305400A35B32 /* FeedViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B833359625C5305400A35B32 /* FeedViewController+UITableView.swift */; };
+		B833359E25C557DD00A35B32 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B833359D25C557DD00A35B32 /* DetailViewController.swift */; };
+		B83335A225C5586600A35B32 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83335A125C5586600A35B32 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		3E070FAB25AAE864009B53D1 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 		B80AB83125BBEC9900C0459C /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		B833359625C5305400A35B32 /* FeedViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewController+UITableView.swift"; sourceTree = "<group>"; };
+		B833359D25C557DD00A35B32 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B83335A125C5586600A35B32 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,9 @@
 		3E070F9D25AAE04C009B53D1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B833359C25C557C300A35B32 /* Detail */,
 				B833359525C5301D00A35B32 /* Feed */,
+				B83335A125C5586600A35B32 /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -131,6 +137,14 @@
 				B833359625C5305400A35B32 /* FeedViewController+UITableView.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		B833359C25C557C300A35B32 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B833359D25C557DD00A35B32 /* DetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +229,9 @@
 				B833359725C5305400A35B32 /* FeedViewController+UITableView.swift in Sources */,
 				3E070FA825AAE654009B53D1 /* FeedTableViewCell.swift in Sources */,
 				B80AB83225BBEC9900C0459C /* UserRepository.swift in Sources */,
+				B83335A225C5586600A35B32 /* BaseViewController.swift in Sources */,
 				3E070F7F25AACD86009B53D1 /* AppDelegate.swift in Sources */,
+				B833359E25C557DD00A35B32 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
