@@ -19,7 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let rect = UIScreen.main.bounds
     let window = UIWindow(frame: CGRect(x: 0, y: 0, width: rect.width, height: rect.height))
     let userRepository = UserRepository()
-    window.rootViewController = FeedViewController(userRepository: userRepository)
+//    window.rootViewController = FeedViewController(userRepository: userRepository)
+    window.rootViewController = DetailViewController(userType: UserType(name: "kim", address: "서울시", thumbnailUrl: "https://canary.contestimg.wish.com/api/webimage/5c00dfcd4f16317ea1468191-large.jpg?cache_buster=dc87a0da75df8260586095d5254fdf63"))
     window.makeKeyAndVisible()
     
     self.window = window
