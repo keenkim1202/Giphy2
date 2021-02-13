@@ -11,7 +11,7 @@ import SnapKit
 final class FeedViewController: BaseViewController {
   
   internal let userRepository: UserRepositoryType
-
+  
   private lazy var tableView: UITableView = {
     let tableView = UITableView(frame: .zero, style: .plain)
     tableView.delegate = self
@@ -28,6 +28,7 @@ final class FeedViewController: BaseViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setUp()
+
   }
   
   private func setUp() {
@@ -38,5 +39,6 @@ final class FeedViewController: BaseViewController {
       maker.edges.equalToSuperview()
     }
   }
+  
 }
 

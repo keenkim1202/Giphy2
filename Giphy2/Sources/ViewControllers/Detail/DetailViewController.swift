@@ -26,13 +26,16 @@ final class DetailViewController: BaseViewController {
   
   private func setUp() {
     view.backgroundColor = .white
-    
+        
     let containerView = UIStackView()
     containerView.axis = .vertical
     containerView.spacing = CGFloat(8)
     view.addSubview(containerView)
     containerView.snp.makeConstraints { (maker) in
-      maker.edges.equalToSuperview().inset(16)
+      maker.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin).inset(16)
+      maker.bottom.equalTo(self.view).inset(16)
+
+      maker.left.right.equalTo(self.view).inset(16)
     }
     
     let titleLabel = UILabel()
@@ -52,7 +55,5 @@ final class DetailViewController: BaseViewController {
     descriptionLabel.text = userType.address
     descriptionLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)
     containerView.addArrangedSubview(descriptionLabel)
-    
   }
-
 }
