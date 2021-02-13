@@ -14,7 +14,7 @@ class FeedTableViewCell: UITableViewCell {
   private let thumbnail = UIImageView()
   private let title =  UILabel()
   private let subtitle = UILabel()
-  
+
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     setUp()
@@ -46,6 +46,9 @@ class FeedTableViewCell: UITableViewCell {
     verticalStackView.addArrangedSubview(title)
     verticalStackView.addArrangedSubview(subtitle)
     horizontalStackView.addArrangedSubview(verticalStackView)
+    
+
+    
   }
   
   func configure(user: UserType) {
@@ -56,4 +59,6 @@ class FeedTableViewCell: UITableViewCell {
       thumbnail.kf.setImage(with:url)
     }
   }
+  
+
 }

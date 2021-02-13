@@ -27,12 +27,24 @@ final class DetailViewController: BaseViewController {
   private func setUp() {
     view.backgroundColor = .white
     
+    // scrollview 추가
+    let scrollView = UIScrollView()
+    view.addSubview(scrollView)
+    
+    scrollView.snp.makeConstraints { (maker) in
+      maker.edges.equalToSuperview()
+    }
+    //
+    
     let containerView = UIStackView()
     containerView.axis = .vertical
     containerView.spacing = CGFloat(8)
     view.addSubview(containerView)
+    scrollView.addSubview(containerView) // 추가
     containerView.snp.makeConstraints { (maker) in
-      maker.edges.equalToSuperview().inset(16)
+//      maker.edges.equalToSuperview().inset(16)
+      maker.top.bottom.equalTo(scrollView)
+      maker.left.right.equalTo(self.view).inset(16)
     }
     
     let titleLabel = UILabel()
@@ -52,7 +64,5 @@ final class DetailViewController: BaseViewController {
     descriptionLabel.text = userType.address
     descriptionLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)
     containerView.addArrangedSubview(descriptionLabel)
-    
   }
-
 }
