@@ -19,8 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let rect = UIScreen.main.bounds
     let window = UIWindow(frame: CGRect(x: 0, y: 0, width: rect.width, height: rect.height))
     let userRepository = UserRepository()
+        
+    loadData(repo: userRepository)
+    // 원래 코드
 //    window.rootViewController = FeedViewController(userRepository: userRepository)
-    window.rootViewController = DetailViewController(userType: UserType(name: "kim", address: "서울시", thumbnailUrl: "https://canary.contestimg.wish.com/api/webimage/5c00dfcd4f16317ea1468191-large.jpg?cache_buster=dc87a0da75df8260586095d5254fdf63"))
+    
+    let rootVC = FeedViewController(userRepository: userRepository)
+    let nvc = UINavigationController(rootViewController: rootVC)
+    rootVC.title = "목록"
+    window.rootViewController = nvc
+    
+//    window.rootViewController = DetailViewController(userType: UserType(name: "kim", address: "서울시", thumbnailUrl: "https://canary.contestimg.wish.com/api/webimage/5c00dfcd4f16317ea1468191-large.jpg?cache_buster=dc87a0da75df8260586095d5254fdf63"))
     window.makeKeyAndVisible()
     
     self.window = window
@@ -28,5 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return true
   }
   
+  private func loadData(repo: UserRepositoryType) {
+    repo.add(userType: UserType(name: "kim", address: "서울", thumbnailUrl: "https://image.ytn.co.kr/general/jpg/2020/1207/202012071325561445_t.jpg"))
+  }
+
 }
 
