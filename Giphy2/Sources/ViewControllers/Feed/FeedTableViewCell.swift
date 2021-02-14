@@ -46,9 +46,6 @@ class FeedTableViewCell: UITableViewCell {
     verticalStackView.addArrangedSubview(title)
     verticalStackView.addArrangedSubview(subtitle)
     horizontalStackView.addArrangedSubview(verticalStackView)
-    
-
-    
   }
   
   func configure(user: UserType) {
