@@ -28,6 +28,5 @@ extension FeedViewController: UITableViewDataSource {
       let vc = DetailViewController(userType: userType)
     
     navigationController?.pushViewController(vc, animated: true)
-    
   }
 }

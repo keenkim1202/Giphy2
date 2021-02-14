@@ -56,6 +56,4 @@ class FeedTableViewCell: UITableViewCell {
       thumbnail.kf.setImage(with:url)
     }
   }
-  
-
 }

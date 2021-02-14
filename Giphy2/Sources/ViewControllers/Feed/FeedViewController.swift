@@ -29,7 +29,6 @@ final class FeedViewController: BaseViewController {
     super.viewDidLoad()
     title = "목록"
     setUp()
-
   }
   
   private func setUp() {
@@ -40,6 +39,5 @@ final class FeedViewController: BaseViewController {
       maker.edges.equalToSuperview()
     }
   }
-  
 }
 

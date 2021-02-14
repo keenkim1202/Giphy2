@@ -22,7 +22,6 @@ final class DetailViewController: BaseViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     title = "상세 화면"
-
     setUp()
   }
   
@@ -48,9 +47,6 @@ final class DetailViewController: BaseViewController {
     let pictureView = UIImageView()
     pictureView.kf.setImage(with: URL(string: userType.thumbnailUrl)!)
     containerView.addArrangedSubview(pictureView)
-//    pictureView.snp.makeConstraints { (maker) in
-//      maker.height.lessThanOrEqualTo(180)
-//    }
     
     let descriptionLabel = UILabel()
     descriptionLabel.numberOfLines = 0
