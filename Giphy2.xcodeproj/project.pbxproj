@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C30617C25D8EF3C005966EF /* Giphy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C30617B25D8EF3C005966EF /* Giphy.plist */; };
+		1C30617F25D8F296005966EF /* GiphyApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C30617E25D8F296005966EF /* GiphyApiService.swift */; };
+		1C30618325D8F46D005966EF /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1C30618225D8F46D005966EF /* Moya */; };
 		3E070F7F25AACD86009B53D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E070F7E25AACD86009B53D1 /* AppDelegate.swift */; };
 		3E070F8825AACD87009B53D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E070F8725AACD87009B53D1 /* Assets.xcassets */; };
 		3E070F8B25AACD87009B53D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E070F8925AACD87009B53D1 /* LaunchScreen.storyboard */; };
@@ -22,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C30617B25D8EF3C005966EF /* Giphy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Giphy.plist; sourceTree = "<group>"; };
+		1C30617E25D8F296005966EF /* GiphyApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyApiService.swift; sourceTree = "<group>"; };
 		3E070F7B25AACD86009B53D1 /* Giphy2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giphy2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E070F7E25AACD86009B53D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E070F8725AACD87009B53D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +48,7 @@
 			files = (
 				3E070FB225AAEBAF009B53D1 /* Kingfisher in Frameworks */,
 				3E070FA525AAE11E009B53D1 /* SnapKit in Frameworks */,
+				1C30618325D8F46D005966EF /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				3E070F8C25AACD87009B53D1 /* Info.plist */,
+				1C30617B25D8EF3C005966EF /* Giphy.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				B80AB83125BBEC9900C0459C /* UserRepository.swift */,
+				1C30617E25D8F296005966EF /* GiphyApiService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -166,6 +174,7 @@
 			packageProductDependencies = (
 				3E070FA425AAE11E009B53D1 /* SnapKit */,
 				3E070FB125AAEBAF009B53D1 /* Kingfisher */,
+				1C30618225D8F46D005966EF /* Moya */,
 			);
 			productName = Giphy2;
 			productReference = 3E070F7B25AACD86009B53D1 /* Giphy2.app */;
@@ -197,6 +206,7 @@
 			packageReferences = (
 				3E070FA325AAE11E009B53D1 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				3E070FB025AAEBAF009B53D1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				1C30618125D8F46D005966EF /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 3E070F7C25AACD86009B53D1 /* Products */;
 			projectDirPath = "";
@@ -212,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C30617C25D8EF3C005966EF /* Giphy.plist in Resources */,
 				3E070F8B25AACD87009B53D1 /* LaunchScreen.storyboard in Resources */,
 				3E070F8825AACD87009B53D1 /* Assets.xcassets in Resources */,
 			);
@@ -231,6 +242,7 @@
 				B80AB83225BBEC9900C0459C /* UserRepository.swift in Sources */,
 				B83335A225C5586600A35B32 /* BaseViewController.swift in Sources */,
 				3E070F7F25AACD86009B53D1 /* AppDelegate.swift in Sources */,
+				1C30617F25D8F296005966EF /* GiphyApiService.swift in Sources */,
 				B833359E25C557DD00A35B32 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +441,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1C30618125D8F46D005966EF /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
 		3E070FA325AAE11E009B53D1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -448,6 +468,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1C30618225D8F46D005966EF /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C30618125D8F46D005966EF /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
 		3E070FA425AAE11E009B53D1 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3E070FA325AAE11E009B53D1 /* XCRemoteSwiftPackageReference "SnapKit" */;
