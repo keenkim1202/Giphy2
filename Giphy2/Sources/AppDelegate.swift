@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window.rootViewController = nvc
     window.makeKeyAndVisible()
     
+    GiphyApiService().fetchTrending()
+    
     self.window = window
     self.userRepository = userRepository
     return true

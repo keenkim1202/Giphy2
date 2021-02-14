@@ -14,7 +14,7 @@ enum GiphyApiType {
 
 extension GiphyApiType: TargetType {
   var baseURL: URL {
-    return URL(string: "https://api.giphy.com/v1/gifs/trending")!
+    return URL(string: "https://api.giphy.com/v1/gifs")!
   }
   
   var path: String {
@@ -60,7 +60,15 @@ final class GiphyApiService: GiphyApiServiceType {
   
   func fetchTrending() {
     provider.request(.trending) { (result) in
-      print("provider request end.")
+      switch result {
+      case .success(let response):
+        guard let giphyRespose = try? JSONDecoder().decode(GiphyResponseType.self, from: response.data) else { return }
+        print(giphyRespose.data)
+        
+      case .failure(let error):
+        debugPrint(error.localizedDescription)
+      }
+      
     }
   }
 }
