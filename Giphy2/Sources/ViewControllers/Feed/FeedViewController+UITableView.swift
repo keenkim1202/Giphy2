@@ -25,7 +25,6 @@ extension FeedViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let vc = DetailViewController(userType: UserType(name: "kim", address: "서울시", thumbnailUrl: "https://canary.contestimg.wish.com/api/webimage/5c00dfcd4f16317ea1468191-large.jpg?cache_buster=dc87a0da75df8260586095d5254fdf63"))
-//        present(vc, animated: true)
     
     vc.title = "상세 화면"
 
