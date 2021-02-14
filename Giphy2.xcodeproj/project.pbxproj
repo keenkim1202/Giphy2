@@ -10,6 +10,7 @@
 		1C30617C25D8EF3C005966EF /* Giphy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C30617B25D8EF3C005966EF /* Giphy.plist */; };
 		1C30617F25D8F296005966EF /* GiphyApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C30617E25D8F296005966EF /* GiphyApiService.swift */; };
 		1C30618325D8F46D005966EF /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1C30618225D8F46D005966EF /* Moya */; };
+		1C30618725D8FCAF005966EF /* Giphy2+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C30618625D8FCAF005966EF /* Giphy2+Bundle.swift */; };
 		3E070F7F25AACD86009B53D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E070F7E25AACD86009B53D1 /* AppDelegate.swift */; };
 		3E070F8825AACD87009B53D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E070F8725AACD87009B53D1 /* Assets.xcassets */; };
 		3E070F8B25AACD87009B53D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E070F8925AACD87009B53D1 /* LaunchScreen.storyboard */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		1C30617B25D8EF3C005966EF /* Giphy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Giphy.plist; sourceTree = "<group>"; };
 		1C30617E25D8F296005966EF /* GiphyApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyApiService.swift; sourceTree = "<group>"; };
+		1C30618625D8FCAF005966EF /* Giphy2+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Giphy2+Bundle.swift"; sourceTree = "<group>"; };
 		3E070F7B25AACD86009B53D1 /* Giphy2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giphy2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E070F7E25AACD86009B53D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E070F8725AACD87009B53D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C30618525D8FC85005966EF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1C30618625D8FCAF005966EF /* Giphy2+Bundle.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		3E070F7225AACD86009B53D1 = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +94,9 @@
 		3E070F9425AACFFC009B53D1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1C30618525D8FC85005966EF /* Utils */,
 				B80AB83025BBEC8300C0459C /* Service */,
-				3E070FAA25AAE853009B53D1 /* models */,
+				3E070FAA25AAE853009B53D1 /* Models */,
 				3E070F9D25AAE04C009B53D1 /* ViewControllers */,
 				3E070F7E25AACD86009B53D1 /* AppDelegate.swift */,
 			);
@@ -120,12 +131,12 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		3E070FAA25AAE853009B53D1 /* models */ = {
+		3E070FAA25AAE853009B53D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				3E070FAB25AAE864009B53D1 /* UserType.swift */,
 			);
-			path = models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B80AB83025BBEC8300C0459C /* Service */ = {
@@ -238,6 +249,7 @@
 				3E070FAC25AAE864009B53D1 /* UserType.swift in Sources */,
 				3E070F9F25AAE06C009B53D1 /* FeedViewController.swift in Sources */,
 				B833359725C5305400A35B32 /* FeedViewController+UITableView.swift in Sources */,
+				1C30618725D8FCAF005966EF /* Giphy2+Bundle.swift in Sources */,
 				3E070FA825AAE654009B53D1 /* FeedTableViewCell.swift in Sources */,
 				B80AB83225BBEC9900C0459C /* UserRepository.swift in Sources */,
 				B83335A225C5586600A35B32 /* BaseViewController.swift in Sources */,
